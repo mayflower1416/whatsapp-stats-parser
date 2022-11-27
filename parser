@@ -155,6 +155,7 @@ def top_words(words_by_sender, rankings, sender_count, start_date):
 
         # find the frequency of each word
         sender_words = {}
+        #ranked_sender_all_words_cleaned = [word for word in ranked_sender_all_words_cleaned if len(word) > 1]
         for word in ranked_sender_all_words_cleaned:
             if word not in sender_words.keys():
                 sender_words[word] = 1
